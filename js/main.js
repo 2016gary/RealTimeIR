@@ -159,6 +159,16 @@
 
     //start step1 immediately
     step1();
+	
+	function changeStep(step) {
+        if (step === 1) {
+            video.play();
+        } else {
+            video.pause();
+        }
+
+        $('body').attr('class', 'step' + step);
+    }
 
     function showError(text) {
         $('.alert').show().find('span').text(text);
@@ -166,6 +176,11 @@
 
     $('#takePicture').click(function () {
         step2();
-		$('body').attr('class', 'step' + 2);
+		changeStep(2);
+    });
+
+	$('#go-back').click(function () {
+		step1();
+        changeStep(1);
     });
 })();
