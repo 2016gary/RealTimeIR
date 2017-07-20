@@ -147,7 +147,7 @@
 		var fd = new FormData();
 		fd.append('file', blob);
 		$.ajax({
-			url : "http://nc17643270.iok.la/realTimeIR/uploadPic",
+			url : "higary.iask.in/realTimeIR/uploadPic",
 			async : false,
 			cache : false,
 			contentType : false,
