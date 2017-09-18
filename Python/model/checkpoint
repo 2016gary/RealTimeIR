@@ -1,0 +1,2 @@
+model_checkpoint_path: "5-image-set"
+all_model_checkpoint_paths: "5-image-set"
